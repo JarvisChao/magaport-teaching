@@ -1,0 +1,28 @@
+.l-hero
+  +size(100%, 100vh)
+  &__swiper
+    // 寬高都隨父層 100%
+    +size(100%)
+  &__slide.swiper-slide-active &__img-mask
+    transform: scale(1.1)
+  &__img-mask 
+    +size(100%)
+    transform: scale(1)
+    transition: transform 12s
+
+/* -- header inner -- */
+.l-hero-inner
+  display: flex
+  justify-content: center
+  align-items: center
+  +size(100%, 40vh)
+  background-image: url('../img/footer/footer-bg.jpg')
+  background-size: cover
+  background-position: center center
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    +size(100%)
+    background-color: var(--color-primary)
+    mix-blend-mode: multiply

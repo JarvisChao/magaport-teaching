@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    include ../../layouts/_Settings.pug
+    -
+      path = 'news/detail/news01.html';
+      pageTitle = '金牌台啤x大港開唱 聯名限定上市';
+      infoTitle = '為在地音樂乾一杯！';
+      description = '為在地音樂乾一杯！ 金牌台啤x大港開唱聯名啤酒限定上市 高雄最具代表性的大型音樂...';
+    include ../../layouts/_Head.pug
+  body
+    include ../../layouts/_Header.pug
+
+    section.l-news-detail
+      .container
+        .l-news-detail__img-mask
+          img(src="../../img/news/news02.jpg", alt="金牌台啤x大港開唱 聯名限定上市")
+
+    include ../../layouts/_Footer.pug
+    include ../../layouts/_Scripts.pug
